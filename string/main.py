@@ -28,3 +28,6 @@ print(j)
 
 age = 18.7
 print(f'The age is {age}')
+
+txt = "We are the so-called\n \"Vikings\" from the north."
+print(txt)
