@@ -181,26 +181,26 @@ def main():
             continue
 
         # Execute corresponding function based on user choice
-        if user_input == 0:
-            print("Thank you for using Matrix CLI.😊✨")
-            break
-        elif user_input == 1:
-            addition()
-        elif user_input == 2:
-            subtraction()
-        elif user_input == 3:
-            multiplication()
-        elif user_input == 4:
-            diagonal()
-        elif user_input == 5:
-            trace()
-        else:
-            print("Invalid option. Please try again.❌")
+        match user_input:
+            case 0:
+                print("Thank you for using Matrix CLI.😊✨")
+                break
+            case 1:
+                addition()
+            case 2:
+                subtraction()
+            case 3:
+                multiplication()
+            case 4:
+                diagonal()
+            case 5:
+                trace()
+            case _:
+                print("Invalid option. Please try again.❌")
 
         # Wait for user before showing menu again
         input("\nPress Enter to continue...")
 
 
-# Run the program only if this file is executed directly
-if __name__ == "__main__":
-    main()
+# Run the program
+main()
